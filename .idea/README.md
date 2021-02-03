@@ -12,3 +12,10 @@ return joinArray;
 function solution(str){
 return str = str.split('').reverse().join('');
 }
+=============================
+Square(n) Sum
+function squareSum(numbers){
+return numbers.reduce(function(sum, n){
+return (n*n) + sum;
+}, 0)
+}
