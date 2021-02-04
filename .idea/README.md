@@ -29,3 +29,8 @@ str += word[i];
 return str;
 }
 ==============================
+function capitalizeWord(word) {
+word = word[0].toUpperCase().concat(word.substring(1, word.length));
+return word;
+}
+==============================
