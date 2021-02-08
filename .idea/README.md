@@ -39,3 +39,12 @@ min = numbers[i];
 return min;
 }
 console.log(SmallestIntegerFinder([78,56,232,12,0]))
+
+==============================
+function reverseList(list) {
+let arr = [];
+for (let i = list.length - 1; i >= 0; i --){
+arr.push(list[i]);
+}
+return arr;
+}
