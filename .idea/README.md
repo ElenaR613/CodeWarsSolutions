@@ -28,3 +28,14 @@ str += word[i];
 }
 return str;
 }
+==============================
+function SmallestIntegerFinder(numbers) {
+let min = numbers[0];
+for (let i = 1; i < numbers.length; i++){
+if (numbers[i] < min ){
+min = numbers[i];
+}
+}
+return min;
+}
+console.log(SmallestIntegerFinder([78,56,232,12,0]))
