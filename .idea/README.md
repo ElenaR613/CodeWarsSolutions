@@ -57,3 +57,10 @@ sheep = sheep + i + ' ' + 'sheep...';
 return sheep;
 }
 console.log(countSheep(3));
+==============================
+function createPhoneNumber(numbers){
+numbers.unshift("(");
+numbers.splice(4, 0, ")", " ");
+numbers.splice(9, 0, "-");
+return numbers.join("");
+}
