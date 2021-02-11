@@ -64,3 +64,17 @@ numbers.splice(4, 0, ")", " ");
 numbers.splice(9, 0, "-");
 return numbers.join("");
 }
+==============================
+function whoIsPaying(name){
+let arr= [name];
+if (name.length >= 2) {
+arr.push(name.slice(0, 2));
+}
+return arr;
+}
+console.log(whoIsPaying("I"))
+==============================
+function bonusTime(salary, bonus) {
+return `£${salary * (bonus ? 10 : 1)}`;
+}
+console.log(bonusTime(10000, false));
