@@ -78,3 +78,82 @@ function bonusTime(salary, bonus) {
 return `£${salary * (bonus ? 10 : 1)}`;
 }
 console.log(bonusTime(10000, false));
+==================================
+function averageString(str) {
+if (str === '') return 'n/a';
+let arr1 = str.split(' ');
+let arr = [];
+for (let i of arr1) {
+switch (i) {
+case 'zero':
+arr.push(0);
+break;
+case 'one':
+arr.push(1);
+break;
+case 'two':
+arr.push(2);
+break;
+case 'three':
+arr.push(3);
+break;
+case 'four':
+arr.push(4);
+break;
+case 'five':
+arr.push(5);
+break;
+case 'six':
+arr.push(6);
+break;
+case 'seven':
+arr.push(7);
+break;
+case 'eight':
+arr.push(8);
+break;
+case 'nine':
+arr.push(9);
+break;
+default: return 'n/a';
+}
+}
+let num = 0;
+for (let num1 of arr) {
+num += num1;
+}
+num = Math.floor(num / arr.length);
+switch (num) {
+case 0:
+str = 'zero';
+break;
+case 1:
+str = 'one';
+break;
+case 2:
+str = 'two';
+break;
+case 3:
+str = 'three';
+break;
+case 4:
+str = 'four';
+break;
+case 5:
+str = 'five';
+break;
+case 6:
+str = 'six';
+break;
+case 7:
+str = 'seven';
+break;
+case 8:
+str = 'eight';
+break;
+case 9:
+str = 'nine';
+break;
+}
+return str;
+}
