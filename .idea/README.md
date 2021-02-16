@@ -159,3 +159,15 @@ return str;
 }
 =====================
 plus one KATA
+function solve(s) {
+let a = 0;
+
+for (let letter of s.split('')) {
+if (letter === letter.toUpperCase()) a += 1;
+}
+if (a > s.length/2) {
+return s.toUpperCase();
+} else {
+return s.toLowerCase();
+}
+}
