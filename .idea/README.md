@@ -178,3 +178,9 @@ return [r,g,b].map(function(x) {
 return ('0'+Math.max(0, Math.min(255, x)).toString(16)).slice(-2);
 }).join('').toUpperCase();
 }
+============================
+function getCount(str) {
+str = str.replace(/a|e|i|o|u/g, "!").split("!").length - 1;
+return str;
+}
+console.log(getCount("abracadabra"));
