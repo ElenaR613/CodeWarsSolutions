@@ -184,3 +184,13 @@ str = str.replace(/a|e|i|o|u/g, "!").split("!").length - 1;
 return str;
 }
 console.log(getCount("abracadabra"));
+=======================================
+function pigIt(str) {
+let array = [];
+str = str.split(' ');
+for (let i of str) {
+array.push(i.slice(1) + i[0] + 'ay');
+}
+return array.join(' ').replace('!ay','!').replace('?ay','?');
+}
+console.log(pigIt('Pig latin is cool ! ?'));
