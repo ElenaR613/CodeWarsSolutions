@@ -194,3 +194,7 @@ array.push(i.slice(1) + i[0] + 'ay');
 return array.join(' ').replace('!ay','!').replace('?ay','?');
 }
 console.log(pigIt('Pig latin is cool ! ?'));
+============================
+function find_average(array) {
+return array.reduce((result, current) => result + current, 0) / array.length;
+}
