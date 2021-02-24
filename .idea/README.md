@@ -198,3 +198,7 @@ console.log(pigIt('Pig latin is cool ! ?'));
 function find_average(array) {
 return array.reduce((result, current) => result + current, 0) / array.length;
 }
+============================
+function check(a,x){
+return a.includes(x);
+};
