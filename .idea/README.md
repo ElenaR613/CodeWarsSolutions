@@ -34,3 +34,6 @@ word = word[0].toUpperCase().concat(word.substring(1, word.length));
 return word;
 }
 ==============================
+function check(a,x){
+return a.includes(x);
+};
