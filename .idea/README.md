@@ -49,3 +49,9 @@ console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45));
 
 const arraySum = arr => arr.reduce((res, el) => res + (Array.isArray(el) ? arraySum(el) : el), 0);
 without pass of letters
+============================
+function arraySum(arr){
+arr = arr.join().split(',').map(el => el * 1)
+.filter(el => !isNaN(el))
+return arr.reduce((res, el) => res + (Array.isArray(el) ? arraySum(el) : el), 0);
+}
