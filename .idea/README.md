@@ -46,3 +46,6 @@ return oddS + ' ' + evenS
 ===========================
 const check = (a, x) => a.find( a => a === x ) === x;
 console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45));
+
+const arraySum = arr => arr.reduce((res, el) => res + (Array.isArray(el) ? arraySum(el) : el), 0);
+without pass of letters
