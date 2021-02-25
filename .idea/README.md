@@ -37,3 +37,9 @@ return word;
 function check(a,x){
 return a.includes(x);
 };
+=============================
+function sortMyString(S) {
+let evenS = S.split('').filter((x,i) => i % 2).join('')
+let oddS = S.split('').filter((x,i) => !(i % 2)).join('')
+return oddS + ' ' + evenS
+}
