@@ -43,3 +43,6 @@ let evenS = S.split('').filter((x,i) => i % 2).join('')
 let oddS = S.split('').filter((x,i) => !(i % 2)).join('')
 return oddS + ' ' + evenS
 }
+===========================
+const check = (a, x) => a.find( a => a === x ) === x;
+console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45));
