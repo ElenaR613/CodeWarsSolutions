@@ -59,3 +59,7 @@ return arr.reduce((res, el) => res + (Array.isArray(el) ? arraySum(el) : el), 0)
 function checkTheBucket(bucket){
 return bucket.includes('gold');
 }
+=========================
+function invert(array) {
+return array.map(e=> e*-1);
+}
