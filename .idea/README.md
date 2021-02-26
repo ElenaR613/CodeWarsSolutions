@@ -55,3 +55,7 @@ arr = arr.join().split(',').map(el => el * 1)
 .filter(el => !isNaN(el))
 return arr.reduce((res, el) => res + (Array.isArray(el) ? arraySum(el) : el), 0);
 }
+========================
+function checkTheBucket(bucket){
+return bucket.includes('gold');
+}
