@@ -63,3 +63,7 @@ return bucket.includes('gold');
 function invert(array) {
 return array.map(e=> e*-1);
 }
+=========================
+function distinct(a) {
+return a.filter((item, index) => a.indexOf(item) === index);
+}
