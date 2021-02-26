@@ -67,3 +67,6 @@ return array.map(e=> e*-1);
 function distinct(a) {
 return a.filter((item, index) => a.indexOf(item) === index);
 }
+===========================
+Short Average of Array
+const avg = (a) => a.reduce((p, c) => p + c) / a.length
