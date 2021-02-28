@@ -70,3 +70,18 @@ return a.filter((item, index) => a.indexOf(item) === index);
 ===========================
 Short Average of Array
 const avg = (a) => a.reduce((p, c) => p + c) / a.length
+=====================================
+REACT
+var styles = React.StyleSheet.create({
+text: {
+color: 'black',
+backgroundColor: 'white',
+fontSize: 30,
+margin: 80
+}
+});
+class PropertyFinderApp extends React.Component {
+render() {
+return React.createElement(React.Text, {style: styles.text}, "Hello World!");
+}
+}
