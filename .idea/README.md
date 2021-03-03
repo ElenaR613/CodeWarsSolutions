@@ -85,3 +85,7 @@ render() {
 return React.createElement(React.Text, {style: styles.text}, "Hello World!");
 }
 }
+==========================
+function findNeedle(haystack) {
+return 'found the needle at position ' + haystack.indexOf('needle');
+}
