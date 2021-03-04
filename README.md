@@ -89,3 +89,10 @@ return React.createElement(React.Text, {style: styles.text}, "Hello World!");
 function findNeedle(haystack) {
 return 'found the needle at position ' + haystack.indexOf('needle');
 }
+==========================
+function inAscOrder(arr) {
+for (let i = 0; i <= arr.length; i++){
+if (arr[i] > arr[i+1]) return false;      
+}
+return true;
+}
