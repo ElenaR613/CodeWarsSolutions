@@ -96,3 +96,8 @@ if (arr[i] > arr[i+1]) return false;
 }
 return true;
 }
+==========================
+function mergeArrays(arr1, arr2) {
+arr1 = arr1.concat(arr2);
+return arr1 = arr1.filter((item, pos) => arr1.indexOf(item) === pos).sort((a, b) => a - b);
+}
