@@ -111,3 +111,8 @@ return _.sortBy(_.union(arr1, arr2));
 function digitize(n){
 return (n + '').split('').map(Number).reverse();
 }
+========================
+function betterThanAverage(classPoints, yourPoints) {
+if ((classPoints.reduce((a, b) => (a + b)) / classPoints.length) < yourPoints) {return true}
+return false
+}
