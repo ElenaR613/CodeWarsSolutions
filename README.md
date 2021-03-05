@@ -107,3 +107,7 @@ const _ = require('lodash');
 function mergeArrays(arr1, arr2) {
 return _.sortBy(_.union(arr1, arr2));
 }
+========================
+function digitize(n){
+return (n + '').split('').map(Number).reverse();
+}
