@@ -101,3 +101,9 @@ function mergeArrays(arr1, arr2) {
 arr1 = arr1.concat(arr2);
 return arr1 = arr1.filter((item, pos) => arr1.indexOf(item) === pos).sort((a, b) => a - b);
 }
+__________________
+const _ = require('lodash');
+
+function mergeArrays(arr1, arr2) {
+return _.sortBy(_.union(arr1, arr2));
+}
