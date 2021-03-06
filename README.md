@@ -116,3 +116,8 @@ function betterThanAverage(classPoints, yourPoints) {
 if ((classPoints.reduce((a, b) => (a + b)) / classPoints.length) < yourPoints) {return true}
 return false
 }
+========================
+function removeDuplicateWords (s) {
+s = s.split(" ");
+return s = [...new Set(s)].join (' ');
+}
