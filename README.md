@@ -121,3 +121,7 @@ function removeDuplicateWords (s) {
 s = s.split(" ");
 return s = [...new Set(s)].join (' ');
 }
+=========================
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+return distanceToPump/mpg <= fuelLeft
+};
